@@ -4,6 +4,8 @@
 This is the data repository for the 2019 Novel Coronavirus from Ministerio de Salud de Argentina by the Adrián Freisinger
 
 
+
+
 <br>
 
 <b>Official Site:</b><br>
@@ -12,6 +14,11 @@ https://www.argentina.gob.ar/salud
 <b>Daily Reports:</b><br>
 https://www.argentina.gob.ar/coronavirus/informe-diario
 <br><br>
+
+
+## Code Samples
+
+> All code, log and pdf file are included in this repository.
 
 
 <b>Contact Us: </b><br>
