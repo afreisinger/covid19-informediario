@@ -1,3 +1,6 @@
+# Download all pdf files from https://www.argentina.gob.ar/coronavirus/informe-diario
+# The details are saved in info.log
+
 
 from tqdm import tqdm
 from bs4 import BeautifulSoup
@@ -14,7 +17,7 @@ if platform.platform().startswith('Windows'):
     log_file = os.path.join(os.getenv('HOMEDRIVE'), os.getenv("HOMEPATH"), log_archive)
     
 else:
-    #file = os.path.join(os.getenv('HOME'), log_archive')
+    #log_file = os.path.join(os.getenv('HOME'), log_archive')
      log_file = os.path.join(path, log_archive)
     
 

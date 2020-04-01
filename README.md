@@ -25,5 +25,5 @@ All the code, logs and pdf files are included in this repository.
 <br><br>
 
 <b>Terms of Use:</b><br>
-
 This GitHub repo and its contents herein, including all data, mapping, and analysis, is provided to the public strictly for educational and academic research purposes.  The Website relies upon publicly available data from multiple sources, that do not always agree.
+<br><br>
