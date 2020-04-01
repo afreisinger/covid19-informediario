@@ -1,13 +1,13 @@
 # 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository 
 
 
-This is the data repository for the 2019 Novel Coronavirus from Ministerio de Salud de Argentina by the Adrián Freisinger
+<b>This is the data repository for the 2019 Novel Coronavirus from Ministerio de Salud de Argentina by the Adrián Freisinger</b>
 
 
 
 
 
-<b>Official Site
+<b>Official Site</b><br>
 https://www.argentina.gob.ar/salud
 <br><br>
 <b>Daily Reports:</b><br>
