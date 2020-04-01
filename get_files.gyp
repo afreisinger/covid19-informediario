@@ -18,7 +18,7 @@ else:
      log_file = os.path.join(path, log_archive)
     
 
-print('Archivo log en ', log_file)
+print('Archivo log en ', log_file + '\r\n')
 
 
 logging.basicConfig(level=logging.INFO,
