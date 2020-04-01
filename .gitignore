@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# This file
+# Personal
 .gitignore
+*.code-workspace
