@@ -6,7 +6,7 @@ This is the data repository for the 2019 Novel Coronavirus from Ministerio de Sa
 
 <br>
 
-<b>Offical Site:</b><br>
+<b>Official Site:</b><br>
 https://www.argentina.gob.ar/salud
 <br><br>
 <b>Daily Reports:</b><br>
