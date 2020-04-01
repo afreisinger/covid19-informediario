@@ -6,7 +6,6 @@ This is the data repository for the 2019 Novel Coronavirus from Ministerio de Sa
 
 
 
-<br>
 
 <b>Official Site
 https://www.argentina.gob.ar/salud
@@ -17,7 +16,8 @@ https://www.argentina.gob.ar/coronavirus/informe-diario
 
 
 <b>Code Samples:</b><br>
- All the code, logs and pdf files are included in this repository.
+All the code, logs and pdf files are included in this repository.
+<br><br>
 
 
 <b>Contact Us: </b><br>
