@@ -6,7 +6,7 @@ from tqdm import tqdm
 from bs4 import BeautifulSoup
 import requests
 from clint.textui import progress
-import os, sys, platform, logging
+import os, sys, platform, logging, time
 
 
 path='./informes/covid19-informediario/'
