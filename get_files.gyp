@@ -7,6 +7,9 @@ from bs4 import BeautifulSoup
 import requests
 from clint.textui import progress
 import os, sys, platform, logging, time
+import datetime
+
+
 
 
 path='./informes/covid19-informediario/'
@@ -65,4 +68,8 @@ for x in range(0,len(links)):
     else:
 
         print('This file '+ tail +' already exists.\r\n')
- 
+
+
+timestamp = datetime.datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
+with open(os.path.join(path,'last_update.txt'), 'w') as f:
+    f.write('Last update on: {}'.format(timestamp))
