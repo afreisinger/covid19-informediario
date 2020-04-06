@@ -30,7 +30,7 @@ print('Archivo log en ', log_file + '\r\n')
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s : %(levelname)s : %(message)s',
                     filename = log_file,
-                    filemode = 'a',)
+                    filemode = 'a')
 
 #logging.debug('Comienza el programa')
 #logging.info('Procesando con normalidad')
