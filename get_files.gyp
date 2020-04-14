@@ -45,6 +45,7 @@ boxList = soup.findAll('a',{'class':'btn btn-primary btn-sm'})
 links = [box['href'] for box in boxList]
 
 
+
 for x in range(0,len(links)):
     
     response = requests.get(links[x], stream=True)
