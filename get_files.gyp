@@ -37,7 +37,7 @@ logging.basicConfig(level=logging.INFO,
 #logging.warning('Advertencia')
 
 
-url = "https://www.argentina.gob.ar/coronavirus/informe-diario"
+url = "https://www.argentina.gob.ar/coronavirus/informe-diario/abril2020"
 response = requests.get(url)
 soup = BeautifulSoup(response.content,'html.parser')
 
