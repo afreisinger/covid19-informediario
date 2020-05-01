@@ -1,5 +1,6 @@
 # Download all pdf files from https://www.argentina.gob.ar/coronavirus/informe-diario
 # The details are saved in info.log
+# Last update time  is save in last_update.txt
 
 
 from tqdm import tqdm
