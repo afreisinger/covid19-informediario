@@ -38,7 +38,7 @@ logging.basicConfig(level=logging.INFO,
 #logging.warning('Advertencia')
 
 
-url = "https://www.argentina.gob.ar/coronavirus/informe-diario/mayo2020"
+url = "https://www.argentina.gob.ar/coronavirus/informe-diario/junio2020"
 #url = "https://www.argentina.gob.ar/coronavirus/informe-diario/" # Cambiaron el directorio 
 response = requests.get(url)
 soup = BeautifulSoup(response.content,'html.parser')
