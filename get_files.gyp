@@ -13,7 +13,7 @@ import datetime
 
 
 
-path='./informes/covid19-informediario/'
+path='./informes/covid19-informediario/junio2020/'
 log_archive='info.log'
 
 
