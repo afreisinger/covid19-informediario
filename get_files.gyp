@@ -35,10 +35,27 @@ logging.basicConfig(level=logging.INFO,                                     #log
                     filemode = 'a')
 
 
-logging.basicConfig(level=logging.INFO,                                     #log en cadad directorio
-                    format='%(asctime)s : %(levelname)s : %(message)s',
-                    filename = './informes/covid19-informediario/info.log', #log gral
-                    filemode = 'a')
+##logging.basicConfig(level=logging.INFO,                                     #log en cadad directorio
+##                    format='%(asctime)s : %(levelname)s : %(message)s',
+##                    filename = './informes/covid19-informediario/info.log', #log gral
+##                    filemode = 'a')
+
+
+#logger2 = logging.getLogger('log.gral')
+
+logger = logging.getLogger(__name__)
+fmt = '%(asctime)s : %(levelname)s : %(message)s'
+formatter = logging.Formatter(fmt)
+logger.setLevel(logging.INFO)
+
+file_hander = logging.FileHandler('./informes/covid19-informediario/'+__name__+'.log', mode="a")
+file_hander.setLevel(logging.INFO)
+file_hander.setFormatter(formatter)
+logger.addHandler(file_hander)
+
+
+##log.setFormatter(formatter)
+
 
 
 
@@ -70,7 +87,8 @@ for x in range(0,len(links)):
     if not os.path.isfile(path+tail) or length != os.path.getsize(path+tail):
        
        logging.info("Archivo descargado: ./" + str(tail))
-       
+       logger.info("Archivo descargado: ./" + str(tail))                       
+
        with open(path+tail, "wb") as handle:       
            for data in tqdm(iterable=response.iter_content(chunk_size=1024), total=length/1024, unit='KB'):
                if data:
