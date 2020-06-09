@@ -9,6 +9,7 @@ import requests
 from clint.textui import progress
 import os, sys, platform, logging, time
 import datetime
+from shutil import copyfile
 
 
 
@@ -28,10 +29,18 @@ else:
 print('Archivo log en ', log_file + '\r\n')
 
 
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(level=logging.INFO,                                     #log en cadad directorio
                     format='%(asctime)s : %(levelname)s : %(message)s',
                     filename = log_file,
                     filemode = 'a')
+
+
+logging.basicConfig(level=logging.INFO,                                     #log en cadad directorio
+                    format='%(asctime)s : %(levelname)s : %(message)s',
+                    filename = './informes/covid19-informediario/info.log', #log gral
+                    filemode = 'a')
+
+
 
 #logging.debug('Comienza el programa')
 #logging.info('Procesando con normalidad')
@@ -76,3 +85,5 @@ for x in range(0,len(links)):
 timestamp = datetime.datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
 with open(os.path.join(path,'last_update.txt'), 'w') as f:
     f.write('Last update on: {}'.format(timestamp))
+
+copyfile(path + 'last_update.txt','./informes/covid19-informediario/last_update.txt')
